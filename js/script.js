@@ -20,7 +20,7 @@ function add() {
   // limpiamos el campo
   return false;
 }
-
+<!--lol-->
 function remove() {
   let id = this.getAttribute("id");
   let todos = get_todos();
