@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html data-bs-theme="dark">
     <head>
         <meta charset="utf-8" />
         <title>Tareas</title>
@@ -11,16 +11,33 @@
         />
     </head>
     <body>
-        <header>
-            <h1>Lista de tareas:</h1>
-        </header>
-        <div class="container">
-            <div class="col-6">
-                <section>
-                    <input id="task" /><button id="add">Add</button>
-                    <hr />
-                    <div id="todos"></div>
-                </section>
+        <div class="container" id="mainContainer">
+            <div id="title" class="col-12">
+                <h1>Lista de tareas:</h1>
+            </div>
+            <div class="col-12" id="taskColumn">
+                <div class="input-group mb-3">
+                    <input
+                        id="task-name"
+                        type="text"
+                        class="form-control"
+                        placeholder="Nombre de tarea"
+                        aria-label="Nombre de tarea"
+                        aria-describedby="button-addon2"
+                    />
+                    <input
+                        id="task-desc"
+                        type="text"
+                        class="form-control"
+                        placeholder="Descripción de tarea"
+                        aria-label="Descripcion de tarea"
+                        aria-describedby="button-addon2"
+                    />
+                    <button class="btn btn-success" type="button" id="add">
+                        Añadir
+                    </button>
+                </div>
+                <div id="todos" class="col-12"></div>
             </div>
         </div>
 
